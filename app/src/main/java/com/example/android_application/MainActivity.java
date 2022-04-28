@@ -50,6 +50,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         this.registerReceiver(mReceiver, filter);
 
 
+
+
     }
 
     @Override
@@ -82,13 +84,27 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+
+
         //EditText is a view object while setText method takes String or CharSequence.
         // You cannot set text to view object, it doesn't make sense.
+        //get data from edit text
         String text = email.getText().toString();
+        String pass = password.getText().toString();
+///*//        Intent ii = new Intent(MainActivity.this, Mostafa_Activity.class);
+////        ii.putExtra("Email", text);
+////        ii.putExtra("Password", pass);
+////        startActivity( ii );*/
+
         email.setText( text );
         switch (view.getId()) {
             case R.id.login:
+             /*   Intent ii = new Intent( this, Mostafa_Activity.class );
 
+                ii.putExtra("Email", text);
+                ii.putExtra("Password", pass);
+
+                startActivity( ii );*/
                 if (email.getText().length() == 0) {
                     Toast.makeText( getApplicationContext(),
                             "Please Enter your Email", Toast.LENGTH_SHORT ).show();
@@ -101,11 +117,18 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 } else {
                     Toast.makeText( getApplicationContext(),
                             "Login Successfully", Toast.LENGTH_SHORT ).show();
-                    Intent intent = new Intent( this, MainActivity2.class );
+
+
+                    Intent intent = new Intent( this, Home.class );
+
                     startActivity( intent );
 
-                }
 
+
+
+
+
+                }
 
 
                 break;
@@ -120,10 +143,26 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
 
         }
+   /*   Intent intent = new Intent( this, Mostafa_Activity.class );
+        intent.putExtra("Email", text);
+        intent.putExtra("Password", pass);
+        startActivity( intent );*/
+
+/*        String str = send_text.getText().toString();
+
+        // Create the Intent object of this class Context() to Second_activity class
+        Intent intent = new Intent(getApplicationContext(), Second_activity.class);
+
+        // now by putExtra method put the value in key, value pair
+        // key is message_key by this key we will receive the value, and put the string
+
+        intent.putExtra("message_key", str);
+
+        // start the Intent
+        startActivity(intent);
+    }*/
 
     }
-
-
     public static final Pattern EMAIL_ADDRESS_PATTERN = Pattern.compile(
 
             "[a-zA-Z0-9\\+\\.\\_\\%\\-\\+]{1,256}" +

@@ -49,7 +49,7 @@ public class ForgetPass extends AppCompatActivity implements View.OnClickListene
                             "Please Confirm Password", Toast.LENGTH_SHORT ).show();}
 
                 else if (newPass.getText().toString().equalsIgnoreCase(Confirm.getText().toString())) {
-                    Intent i = new Intent( this, MainActivity2.class );
+                    Intent i = new Intent( this, Home.class );
                     startActivity( i );}
                 else{
                     Toast.makeText( getApplicationContext(),

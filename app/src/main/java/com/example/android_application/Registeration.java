@@ -82,7 +82,7 @@ public class Registeration extends AppCompatActivity implements View.OnClickList
         else{
             Toast.makeText( getApplicationContext(),
                     "Successful Registration", Toast.LENGTH_SHORT ).show();
-            Intent intent = new Intent( this, MainActivity2.class );
+            Intent intent = new Intent( this, Home.class );
             startActivity( intent );
         }
 

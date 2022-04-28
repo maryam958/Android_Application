@@ -37,20 +37,22 @@
         android:textColorHint="@color/white" />
 
     <EditText
+        android:id="@+id/pass"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/pass"
         android:layout_below="@id/username"
-        android:hint="Password"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:layout_margin="15dp"
-        android:padding="20dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="15dp"
         android:background="#30ffffff"
         android:drawableLeft="@drawable/ic_baseline_lock_24"
         android:drawablePadding="20dp"
+        android:hint="Password"
         android:inputType="textPassword"
-        />
+        android:padding="20dp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white" />
 
     <Button
         android:id="@+id/login"

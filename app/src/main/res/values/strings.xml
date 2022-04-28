@@ -1,4 +1,15 @@
 <resources>
     <string name="app_name">Android_Application</string>
+    <string name="Name">Name: Mustafa Gad</string>
+    <string name="Age">NAge: 22</string>
 
+    <string name="Personal_Information">Personal Information</string>
+    <string name="faculty">Faculty of science</string>
+    <string name="Gender">Gender:Male</string>
+    <string name="Achievements">Achievements</string>
+    <string name="Mobile">Mobile Development Course</string>
+    <string name="Web">Web Design Course</string>
+    <string name="Home">BACK TO HOME</string>
+
+    Gender:Male
 </resources>
